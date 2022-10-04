@@ -1,0 +1,394 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 55;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		3F681A64278142E8004520EE /* Face_BlurrerApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F681A63278142E8004520EE /* Face_BlurrerApp.swift */; };
+		3F681A66278142E8004520EE /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F681A65278142E8004520EE /* ContentView.swift */; };
+		3F681A68278142E9004520EE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3F681A67278142E9004520EE /* Assets.xcassets */; };
+		3F681A6B278142E9004520EE /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3F681A6A278142E9004520EE /* Preview Assets.xcassets */; };
+		3FCC252027C9341300A1ED87 /* Model.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FCC251F27C9341300A1ED87 /* Model.swift */; };
+		3FCC252227C934D800A1ED87 /* View.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FCC252127C934D800A1ED87 /* View.swift */; };
+		3FCC252727C968C800A1ED87 /* opencv2.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3FCC252627C968C800A1ED87 /* opencv2.framework */; };
+		3FCC252A27C968FA00A1ED87 /* FaceDetector.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 3FCC252827C968FA00A1ED87 /* FaceDetector.cpp */; };
+		3FCC259F27CAC13500A1ED87 /* Mario-PNG-Free-Image.png in Resources */ = {isa = PBXBuildFile; fileRef = 3FCC259E27CAC13500A1ED87 /* Mario-PNG-Free-Image.png */; };
+		3FE0F69227CC0B8200CC6DC7 /* FaceDetectorWrapper.mm in Sources */ = {isa = PBXBuildFile; fileRef = 3FE0F69127CC0B8200CC6DC7 /* FaceDetectorWrapper.mm */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		3F681A60278142E8004520EE /* Face Blurrer.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Face Blurrer.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		3F681A63278142E8004520EE /* Face_BlurrerApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Face_BlurrerApp.swift; sourceTree = "<group>"; };
+		3F681A65278142E8004520EE /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		3F681A67278142E9004520EE /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		3F681A6A278142E9004520EE /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		3FCC251F27C9341300A1ED87 /* Model.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Model.swift; sourceTree = "<group>"; };
+		3FCC252127C934D800A1ED87 /* View.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = View.swift; sourceTree = "<group>"; };
+		3FCC252627C968C800A1ED87 /* opencv2.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = opencv2.framework; sourceTree = "<group>"; };
+		3FCC252827C968FA00A1ED87 /* FaceDetector.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = FaceDetector.cpp; sourceTree = "<group>"; };
+		3FCC252927C968FA00A1ED87 /* FaceDetector.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = FaceDetector.hpp; sourceTree = "<group>"; };
+		3FCC259E27CAC13500A1ED87 /* Mario-PNG-Free-Image.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Mario-PNG-Free-Image.png"; path = "../../Test project/Test project/Assets.xcassets/Mario-PNG-Free-Image.png"; sourceTree = "<group>"; };
+		3FE0F69027CC0B5F00CC6DC7 /* FaceDetectorWrapper.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FaceDetectorWrapper.h; sourceTree = "<group>"; };
+		3FE0F69127CC0B8200CC6DC7 /* FaceDetectorWrapper.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; path = FaceDetectorWrapper.mm; sourceTree = "<group>"; };
+		3FE0F69627CC0E8400CC6DC7 /* Face Blurrer-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Face Blurrer-Bridging-Header.h"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		3F681A5D278142E8004520EE /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3FCC252727C968C800A1ED87 /* opencv2.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		3F681A57278142E8004520EE = {
+			isa = PBXGroup;
+			children = (
+				3FE0F69127CC0B8200CC6DC7 /* FaceDetectorWrapper.mm */,
+				3FE0F69027CC0B5F00CC6DC7 /* FaceDetectorWrapper.h */,
+				3FCC252827C968FA00A1ED87 /* FaceDetector.cpp */,
+				3FCC252927C968FA00A1ED87 /* FaceDetector.hpp */,
+				3FCC252627C968C800A1ED87 /* opencv2.framework */,
+				3F681A62278142E8004520EE /* Face Blurrer */,
+				3F681A61278142E8004520EE /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		3F681A61278142E8004520EE /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				3F681A60278142E8004520EE /* Face Blurrer.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		3F681A62278142E8004520EE /* Face Blurrer */ = {
+			isa = PBXGroup;
+			children = (
+				3FE0F69627CC0E8400CC6DC7 /* Face Blurrer-Bridging-Header.h */,
+				3FCC259E27CAC13500A1ED87 /* Mario-PNG-Free-Image.png */,
+				3F681A63278142E8004520EE /* Face_BlurrerApp.swift */,
+				3FCC252127C934D800A1ED87 /* View.swift */,
+				3FCC251F27C9341300A1ED87 /* Model.swift */,
+				3F681A65278142E8004520EE /* ContentView.swift */,
+				3F681A67278142E9004520EE /* Assets.xcassets */,
+				3F681A69278142E9004520EE /* Preview Content */,
+			);
+			path = "Face Blurrer";
+			sourceTree = "<group>";
+		};
+		3F681A69278142E9004520EE /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				3F681A6A278142E9004520EE /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		3F681A5F278142E8004520EE /* Face Blurrer */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3F681A6E278142E9004520EE /* Build configuration list for PBXNativeTarget "Face Blurrer" */;
+			buildPhases = (
+				3F681A5C278142E8004520EE /* Sources */,
+				3F681A5D278142E8004520EE /* Frameworks */,
+				3F681A5E278142E8004520EE /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Face Blurrer";
+			productName = "Face Blurrer";
+			productReference = 3F681A60278142E8004520EE /* Face Blurrer.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		3F681A58278142E8004520EE /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1320;
+				LastUpgradeCheck = 1320;
+				TargetAttributes = {
+					3F681A5F278142E8004520EE = {
+						CreatedOnToolsVersion = 13.2.1;
+						LastSwiftMigration = 1320;
+					};
+				};
+			};
+			buildConfigurationList = 3F681A5B278142E8004520EE /* Build configuration list for PBXProject "Face Blurrer" */;
+			compatibilityVersion = "Xcode 13.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 3F681A57278142E8004520EE;
+			productRefGroup = 3F681A61278142E8004520EE /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				3F681A5F278142E8004520EE /* Face Blurrer */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		3F681A5E278142E8004520EE /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3F681A6B278142E9004520EE /* Preview Assets.xcassets in Resources */,
+				3F681A68278142E9004520EE /* Assets.xcassets in Resources */,
+				3FCC259F27CAC13500A1ED87 /* Mario-PNG-Free-Image.png in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		3F681A5C278142E8004520EE /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3FE0F69227CC0B8200CC6DC7 /* FaceDetectorWrapper.mm in Sources */,
+				3FCC252A27C968FA00A1ED87 /* FaceDetector.cpp in Sources */,
+				3F681A66278142E8004520EE /* ContentView.swift in Sources */,
+				3FCC252227C934D800A1ED87 /* View.swift in Sources */,
+				3F681A64278142E8004520EE /* Face_BlurrerApp.swift in Sources */,
+				3FCC252027C9341300A1ED87 /* Model.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		3F681A6C278142E9004520EE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.7;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		3F681A6D278142E9004520EE /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.7;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		3F681A6F278142E9004520EE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"Face Blurrer/Preview Content\"";
+				DEVELOPMENT_TEAM = 3XT6V6JJ8M;
+				ENABLE_PREVIEWS = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSCameraUsageDescription = "need cam access plez 🥺👉🏿👈🏽";
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.7;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "Hassan-Jamil.Face-Blurrer";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_OBJC_BRIDGING_HEADER = "Face Blurrer/Face Blurrer-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		3F681A70278142E9004520EE /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"Face Blurrer/Preview Content\"";
+				DEVELOPMENT_TEAM = 3XT6V6JJ8M;
+				ENABLE_PREVIEWS = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSCameraUsageDescription = "need cam access plez 🥺👉🏿👈🏽";
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.7;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "Hassan-Jamil.Face-Blurrer";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_OBJC_BRIDGING_HEADER = "Face Blurrer/Face Blurrer-Bridging-Header.h";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		3F681A5B278142E8004520EE /* Build configuration list for PBXProject "Face Blurrer" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3F681A6C278142E9004520EE /* Debug */,
+				3F681A6D278142E9004520EE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		3F681A6E278142E9004520EE /* Build configuration list for PBXNativeTarget "Face Blurrer" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3F681A6F278142E9004520EE /* Debug */,
+				3F681A70278142E9004520EE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 3F681A58278142E8004520EE /* Project object */;
+}
